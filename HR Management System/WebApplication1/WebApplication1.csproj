@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87F8B0F1-CE45-4B1F-B38A-6EDC29047B3D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Attendance.aspx" />
+    <Content Include="Course.aspx" />
+    <Content Include="Displayforummessage.aspx" />
+    <Content Include="Displayourmessage.aspx" />
+    <Content Include="Emleave2.aspx" />
+    <Content Include="Employeeraccess.aspx" />
+    <Content Include="Employregadmin.aspx" />
+    <Content Include="Forum.aspx" />
+    <Content Include="Employeetable.aspx" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\clndr.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\jqvmap.css" />
+    <Content Include="css\lines.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="forumRegistration.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HR.aspx" />
+    <Content Include="Images\admin.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Chart.js" />
+    <Content Include="js\clndr.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\d3.v3.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.vmap.js" />
+    <Content Include="js\jquery.vmap.sampledata.js" />
+    <Content Include="js\jquery.vmap.world.js" />
+    <Content Include="js\metisMenu.min.js" />
+    <Content Include="js\moment-2.2.1.js" />
+    <Content Include="js\rickshaw.js" />
+    <Content Include="js\site.js" />
+    <Content Include="js\underscore-min.js" />
+    <Content Include="leave.aspx" />
+    <Content Include="leaveapprovel.aspx" />
+    <Content Include="leavedisplay.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="Images\Login.jpg" />
+    <Content Include="login.aspx" />
+    <Content Include="Department.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="salarypayment.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Displayforummessage.aspx.cs">
+      <DependentUpon>Displayforummessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Displayforummessage.aspx.designer.cs">
+      <DependentUpon>Displayforummessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Displayourmessage.aspx.cs">
+      <DependentUpon>Displayourmessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Displayourmessage.aspx.designer.cs">
+      <DependentUpon>Displayourmessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emleave2.aspx.cs">
+      <DependentUpon>Emleave2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emleave2.aspx.designer.cs">
+      <DependentUpon>Emleave2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employeeraccess.aspx.cs">
+      <DependentUpon>Employeeraccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employeeraccess.aspx.designer.cs">
+      <DependentUpon>Employeeraccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employregadmin.aspx.cs">
+      <DependentUpon>Employregadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employregadmin.aspx.designer.cs">
+      <DependentUpon>Employregadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum.aspx.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum.aspx.designer.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employeetable.aspx.cs">
+      <DependentUpon>Employeetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employeetable.aspx.designer.cs">
+      <DependentUpon>Employeetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forumRegistration.aspx.cs">
+      <DependentUpon>forumRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forumRegistration.aspx.designer.cs">
+      <DependentUpon>forumRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR.aspx.cs">
+      <DependentUpon>HR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR.aspx.designer.cs">
+      <DependentUpon>HR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="leave.aspx.cs">
+      <DependentUpon>leave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="leave.aspx.designer.cs">
+      <DependentUpon>leave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="leaveapprovel.aspx.cs">
+      <DependentUpon>leaveapprovel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="leaveapprovel.aspx.designer.cs">
+      <DependentUpon>leaveapprovel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="leavedisplay.aspx.cs">
+      <DependentUpon>leavedisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="leavedisplay.aspx.designer.cs">
+      <DependentUpon>leavedisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Courses.cs" />
+    <Compile Include="Models\EmAttendance.cs" />
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Employer.cs" />
+    <Compile Include="Models\Forumfeedback.cs" />
+    <Compile Include="Models\Forumregister.cs" />
+    <Compile Include="Models\Leave.cs" />
+    <Compile Include="Models\publicVariables.cs" />
+    <Compile Include="Models\Salary.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="salarypayment.aspx.cs">
+      <DependentUpon>salarypayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salarypayment.aspx.designer.cs">
+      <DependentUpon>salarypayment.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61215</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61215/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
